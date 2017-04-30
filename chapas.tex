@@ -1,0 +1,92 @@
+\documentclass[a4paper]{article}
+
+\usepackage{bbm} %Para dorsales en fuente blackboard
+\usepackage{tikz}
+\usetikzlibrary{shapes,arrows,positioning}
+\usepackage{tikzpagenodes} 
+\usepackage[showframe,top=1.5cm, bottom=1.5cm, left=1cm,right=1cm]{geometry}
+
+\begin{document}
+\thispagestyle{empty}
+
+\newcommand{\traje}[1][]{
+\begin{tikzpicture}[#1]
+	%Grid
+	%\draw[step=1cm,gray!60,very thin] (0,0) grid (4,4);
+	
+%camiseta
+	\draw[black, very thin] (2,2) circle (12mm); 
+	%%%%%%Camiseta lisa%%%%%	
+	%\draw[black, thin] (2.555,2.6) circle (0.07cm); %Escudo
+	%cuello
+	
+	%%%%%%% 12 rayas verticales %%%%%%%
+	\draw[black, thin] (2.5,2.6) circle (0.07cm); %Escudo
+	%
+	\draw[black, line width=0.01mm](1,1.7)--(1,2.66);  %ultra thin, very thin
+	\draw[black, line width=0.01mm](1.2,1.7)--(1.2,2.89); 
+	\draw[black, line width=0.01mm](1.4,1.7)--(1.4,3.04); 
+	\draw[black, line width=0.01mm](1.6,1.7)--(1.6,3.13); 
+	\draw[black, line width=0.01mm](1.8,1.7)--(1.8,3.18); 
+	\draw[black, line width=0.01mm](2.0,1.7)--(2.0,3.2); 
+	\draw[black, line width=0.01mm](2.2,1.7)--(2.2,3.18); 
+	\draw[black, line width=0.01mm](2.4,1.7)--(2.4,3.13); 
+	\draw[black, line width=0.01mm](2.6,1.7)--(2.6,3.04); 
+	\draw[black, line width=0.01mm](2.8,1.7)--(2.8,2.89); 
+	\draw[black, line width=0.01mm](3.0,1.7)--(3.0,2.66); 
+	
+	%%%%%%% 13 rayas verticales %%%%%%%
+	%\draw[black, thin] (2.555,2.6) circle (0.07cm); %Escudo
+	%%
+	%\draw[black, line width=0.01mm](0.985,1.7)--(0.985,2.64); %ultra thin, very thin
+	%\draw[black, line width=0.01mm](1.170,1.7)--(1.170,2.865); 
+	%\draw[black, line width=0.01mm](1.355,1.7)--(1.355,3.013); 
+	%\draw[black, line width=0.01mm](1.540,1.7)--(1.540,3.108); 
+	%\draw[black, line width=0.01mm](1.725,1.7)--(1.725,3.171); 
+	%\draw[black, line width=0.01mm](1.910,1.7)--(1.910,3.2); 
+	%\draw[black, line width=0.01mm](2.095,1.7)--(2.095,3.2); 
+	%\draw[black, line width=0.01mm](2.280,1.7)--(2.280,3.168); 
+	%\draw[black, line width=0.01mm](2.465,1.7)--(2.465,3.105); 
+	%\draw[black, line width=0.01mm](2.650,1.7)--(2.650,3.01); 
+	%\draw[black, line width=0.01mm](2.835,1.7)--(2.835,2.861); 
+	%\draw[black, line width=0.01mm](3.020,1.7)--(3.020,2.633); 
+
+	
+%pantalón
+	\draw[black, very thin] (0.84,1.7) -- (3.16,1.7);
+	%Raya vertical doble
+	\draw[black, line width=0.01mm] (1.4,0.96) -- (1.4,1.7); \draw[black, line width=0.01mm] (1.5,0.91) -- (1.5,1.7); 
+	%Número
+	%\node at (2.555,1.4) {$\mathbbm{2}$};
+	\draw[black, line width=0.01mm] (2.4,1.23) rectangle (2.7,1.55);
+	
+%medias
+	\draw[black, very thin] (1.5,0.91) -- (2.503,0.91);
+\end{tikzpicture}
+}
+
+
+\newcommand{\filatrajes}[1][]{
+\noindent\traje{}
+\traje{}
+\traje{}
+\traje{}
+\traje{}
+\traje{}
+\traje{}
+
+\medskip
+}
+
+\filatrajes{}
+\filatrajes{}
+\filatrajes{}
+\filatrajes{}
+\filatrajes{}
+\filatrajes{}
+\filatrajes{}
+\filatrajes{}
+\filatrajes{}
+\filatrajes{}
+
+\end{document}
