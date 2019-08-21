@@ -1,5 +1,4 @@
 *.aux
-*.bbl
-*.blg
-*.pdf
 *.synctex
+*.blg
+*.bbl
